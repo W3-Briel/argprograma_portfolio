@@ -1,0 +1,25 @@
+.body {
+    padding: 0 !important;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.hero {
+    background-image: url(img/hero1.svg);
+    position: relative;
+}
+.titulo__div {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    margin: auto;
+}
+.titulo__div h1 {
+    font-family: 'Bakbak One', cursive;
+    letter-spacing: 2px;
+}
+.titulo__div h2 {
+    letter-spacing: 10px;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
