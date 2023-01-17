@@ -1,13 +1,37 @@
 .body {
     padding: 0 !important;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .hero {
+    background-attachment: fixed;
     background-image: url(img/hero1.svg);
+    background-size: cover;
     position: relative;
+    min-height: 90%;
+}
+#navbar-example2 {
+    position: sticky;
+    top: 0;
+}
+
+.nav-item:hover{
+    opacity: .9;
+    transition: all 1s;
+}
+.nav-item > a {
+    color: #f2f2f2;
+}
+.dropdown-menu li > a {
+    color: #0d6efd;
+}
+.dropdown-menu li > a:hover {
+    color: #000;
+    margin-left: 10px;
+    border-left: 1px solid #0d6efd;
+    transition: all .3s;
 }
 .titulo__div {
-    padding-top: 15%;
+    padding-top: 30vh;
     padding-bottom: 15%;
     margin: auto;
 }
@@ -15,11 +39,66 @@
     font-family: 'Bakbak One', cursive;
     letter-spacing: 2px;
 }
-.titulo__div h2 {
+.titulo__div h2, .h2__margin__height {
     letter-spacing: 10px;
+}
+.h2__margin__height {
+    margin: 2em 0;
 }
 .wave {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+.card img {
+    display: inline-block;
+    max-width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: top left;
+}
+.bg__tecnologia{
+    background-attachment: fixed;
+    background-image: url(img/hero1.svg);
+}
+.tecnologia__content{
+    margin-bottom: 10em;
+}
+.tecnologias__back, .tecnologias__font {
+    box-shadow: -12px 7px 16px 1px rgba(65, 62, 62, 0.75);
+    min-height: 300px;
+    border-radius: 5px;
+    border-bottom: 2px solid #656262;
+    border-top: 2px solid #656262;
+}
+.tecnologias__back:hover, .tecnologias__font:hover {
+    opacity: 0.9;
+    transition: all 1s;
+}
+.tecnologia {
+    padding: 0.5em;
+}
+.sobremi, .mifoto {
+    margin-bottom: 2em;
+}
+.mifoto {
+    border: 2px solid #f2f2f2;
+    box-shadow: 4px 9px 42px 5px rgba(141, 133, 133, 0.75);
+}
+
+.proyectos {
+    font-family: 'Bakbak One', cursive;
+    letter-spacing: 2px;
+    padding: 2em 0;
+    background-image: url(/img/hero1.svg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contacto-item:hover{
+    color: #0d6efd !important;
+}
+#drop {
+    position: absolute;
+    right: 10;
 }

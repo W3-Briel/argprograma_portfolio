@@ -1,4 +1,4 @@
-<html lang="es" class="bg-dark">
+<html lang="es" class="bg-black">
 
 <head>
 <meta charset="UTF-8">
@@ -10,60 +10,94 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
 	<!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body class="body bg-dark-subtle container-fluid">
+<body class="body bg-black container-fluid">
 	
-  <header class="text-center text-light hero">
-	<!--inicio navegacion-->
-	<nav id="navbar-example2" class="navbar bg-dark px-3 mb-3 ">
-  <a class="navbar-brand fw-bold" href="index.html">W3C-Brielito</a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading1">First</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">Second</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-      </ul>
-    </li>
-  </ul>
-	</nav>
-	<!-- <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-  <h4 id="scrollspyHeading1">First heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading2">Second heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading3">Third heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading4">Fourth heading</h4>
-  <p>...</p>
-  <h4 id="scrollspyHeading5">Fifth heading</h4>
-  <p>...</p>
-	</div> -->
-	<!--fin navegacion -->
+
+  	<!--inicio navegacion-->
+	<nav id="navbar-example2" class="navbar bg-dark px-3 z-3 text-center text-light overflow-hidden">
+    <a class="navbar-brand fw-bold text-light col-12 col-sm-2 " href="index.html">W3C-Brielito</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Tecnologias</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="mostrar" class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Mas</a>
+      </li>
+    </ul>
+    <hr class="col-12 hr">
+    </nav>
+
+    <ul id="drop" class="dropdown-menu show bg-dark text-light">
+      <li><a class="dropdown-item" href="#scrollspyHeading3">Ingresar</a></li>
+      <li><a class="dropdown-item" href="#scrollspyHeading4">Registrar</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#scrollspyHeading5">Sobre Mi</a></li>
+    </ul>
+
+
+  <header class="text-center text-light hero overflow-hidden">
   <div class="container titulo__div">
         <h1 class="fs-1 fw-bold align-self-center">FULLSTACK DEVELOPER</h1>
         <h2 class="fs-2 text-light bg-dark fw-bolder d-inline">Angel Gabriel</h2>
   </div>
 
-  <img src="img/wave.svg" class="wave object-fit-scale">
+  <picture>
+    <source srcset="img/wavelg.svg" media="(min-width: 1500px)">
+    <img src="img/wave.svg" unselectable class="wave object-fit-scale"> <!-- imagen principal -->
+  </picture>
+
   </header>
-	<div class="skills bg-black text-light">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione qui perspiciatis modi sit repellat beatae, rem assumenda illo dolorem. Quae itaque totam perspiciatis dolores magni architecto provident fuga tenetur ab?
-	</div>
-  <!--PROYECTOS-->
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+  <!--INICIO SOBREMI-->
+  <h2 class="text-light text-center fs-1 fw-semibold h2__margin__height">Sobre mí</h2>
+  <section class="sobreMi container text-center">
+    <img src="img/mifoto.webp" class="rounded-circle mifoto">
+    <p class="fs-6 text-light sobremi">Mi nombre es Angel Gabriel Saucedo, tengo 19 años y he estado dedicando mi tiempo al mundo de la programación durante dos años. <br>Además, tengo un año de estudio en la carrera técnica en e-commerce y actualmente estoy estudiando una Licenciatura en Gestión de Tecnologías de la Información. Con la ayuda de estudios autodirigidos y en línea a través de ArgentinaPrograma, he adquirido habilidades en desarrollo web full stack.<br><br> Mi portafolio digital demuestra mi experiencia en las tecnologías utilizadas en el desarrollo de sitios web y aplicaciones. Continuaré aprendiendo y mejorando mis habilidades, tanto a través de mis estudios actuales como en la práctica, para poder ofrecer soluciones de alta calidad a todos los clientes que trabajen conmigo.</p>
+  </section>
+  <!--FIN SOBREMI-->
+  <!--INICIO TECNOLOGIAS-->
+    <h2 class="text-light text-center fs-1 fw-semibold h2__margin__height">Tecnologias</h2>
+  <div class="container-sm tecnologia__content">
+    <div class="row gap-3 justify-content-center">
+      <div class="tecnologias__font col-lg-5  bg-dark">
+        <h2 class="text-light text-center fs-3 fw-semibold h2__margin__height text-bg-danger">FrontEND</h2>
+        <article class="tecnologias__content row fs-4">
+          <div class="tecnologia text-light col-md-6 col-6"><i class="bi bi-bookmark-check"> Bootstrap</i></div>
+          <div class="tecnologia text-light col-md-6 col-6"><i class="bi bi-bookmark-check"> CSS</i></div>
+          <div class="tecnologia text-light col-md-6 col-6"><i class="bi bi-bookmark-check"> HTML</i></div>
+          <div class="tecnologia text-light col-md-6 col-6"><i class="bi bi-bookmark-check"> Javascript</i></div>
+          <div class="tecnologia text-light col-md-6 col-12"><i class="bi bi-bookmark-check"> Angular</i></div>
+        </article>
+      </div>
+
+      <div class="tecnologias__back col-lg-5 fs-4 bg-dark">
+        <h2 class="text-light text-center fs-3 fw-semibold h2__margin__height text-bg-danger">BackEND</h2>
+        <article class="tecnologias__content row">
+          <div class="tecnologia text-light col-md-6 col-6"><i class="bi bi-bookmark-check"> JAVA</i></div>
+          <div class="tecnologia text-light col-md-6 col-6"><i class="bi bi-bookmark-check"> Angular</i></div>
+          <div class="tecnologia text-light col-md-6 col-6"><i class="bi bi-bookmark-check"> MySQL</i></div>
+          <div class="tecnologia text-light col-md-6 col-6"><i class="bi bi-bookmark-check"> Node.js</i></div>
+          <div class="tecnologia text-light col-md-6 col-12"><i class="bi bi-bookmark-check"> Typescript</i></div>
+        </article>
+      </div>
+    </div>
+</div>
+  <!--FIN TECNOLOGIAS-->
+    <!--PROYECTOS-->
+    <h2 id="scrollspyHeading2" class="text-light text-center fs-1 fw-semibold h2__margin__height proyectos">Proyectos</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container m-auto text-center">
     <div class="col">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="img/calculadora.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -72,7 +106,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="img/todolist.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -81,7 +115,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="img/monkylifeAlfa.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -89,7 +123,7 @@
       </div>
     </div>
 
-    <div class="col placeholder">
+    <div class="col">
       <div class="card">
         <img src="..." class="card-img-top placeholder" alt="...">
         <div class="card-body">
@@ -100,9 +134,21 @@
     </div>
   </div>
   <!--FINAL PROYECTOS-->
-	<div class="contacto">
-	</div>
-	<footer></footer>
+
+	<footer class="container text-center">
+    <h3 class="fs-2 h2__margin__height text-bg-danger">
+      Contactar
+    </h3>
+    <div class="row">
+        <a class="fs-4 text-light h2__margin__height col-lg-6 contacto-item" href="https://wa.me/5491165452630?text=Me%20pongo%20en%20contacto%20contigo%20por%20mi%20inter%C3%A9s%20en%20tu%20portfolio%20web%2C%20me%20gustaria%20hablarte%20sobre%3A%20..." target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+        <a href="#" class="fs-4 text-light h2__margin__height col-lg-6 contacto-item" target="_blank"><i class="bi bi-github"></i> Github</a>
+        <a href="mailto:saucedog926@gmail.com" class="fs-4 text-light h2__margin__height col-lg-6 contacto-item"><i class="bi bi-envelope-at"></i> Correo</a>
+        <a href="https://www.linkedin.com/in/angel-gabriel-853975232/" target="_blank" class="fs-4 text-light h2__margin__height col-lg-6 contacto-item"><i class="bi bi-linkedin"></i> Linkedin</a>
+  </div>
+  </footer>
+  <div class="text-center container-fluid bg-dark text-bg-light"><p class="m-0">Angel Gabriel Saucedo</p></div>
+
+  <script src="index.js"></script>
 	<!--BOOTSTRAP js-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
