@@ -99,6 +99,9 @@
     color: #0d6efd !important;
 }
 #drop {
-    position: absolute;
-    right: 10;
+    position: fixed;
+    right: 5px;
+}
+#drop a {
+    color: #5190ee;
 }
