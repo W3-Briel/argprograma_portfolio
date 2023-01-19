@@ -21,13 +21,8 @@
 .nav-item > a {
     color: #f2f2f2;
 }
-.dropdown-menu li > a {
-    color: #0d6efd;
-}
 .dropdown-menu li > a:hover {
-    color: #000;
     margin-left: 10px;
-    border-left: 1px solid #0d6efd;
     transition: all .3s;
 }
 .titulo__div {
@@ -56,10 +51,6 @@
     height: 230px;
     object-fit: cover;
     object-position: top left;
-}
-.bg__tecnologia{
-    background-attachment: fixed;
-    background-image: url(img/hero1.svg);
 }
 .tecnologia__content{
     margin-bottom: 10em;
@@ -90,7 +81,7 @@
     font-family: 'Bakbak One', cursive;
     letter-spacing: 2px;
     padding: 2em 0;
-    background-image: url(/img/hero1.svg);
+    background-image: url(img/hero1.svg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -104,4 +95,8 @@
 }
 #drop a {
     color: #5190ee;
+}
+#drop a:hover {
+    color: #000;
+    font-weight: bold;
 }
