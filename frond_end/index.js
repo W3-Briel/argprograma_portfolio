@@ -1,12 +1,18 @@
-let drop = document.getElementById("drop");
-let mas = document.getElementById("mostrar");
+const menuIcon = document.getElementById("menu-icon-responsive");
+const menuUI = document.getElementById("menu-responsive");
+const closeMenuResponsive = document.getElementById("closeMenu-r");
 
-mas.addEventListener("click", mostrar);
+menuIcon.addEventListener("click", showMenu); //* mostrar menu
+closeMenuResponsive.addEventListener("click", closeMenu);
 
-function mostrar(){
-    if (drop.classList.contains("show")){
-        drop.classList.remove("show")
-    } else {
-        drop.classList.add("show")
+function showMenu (){
+    if (menuUI.classList.contains("closeMenu")){
+        menuUI.classList.replace("closeMenu", "showMenu");
     }
-}
+};
+
+function closeMenu (){
+    if (menuUI.classList.contains("showMenu")){
+        menuUI.classList.replace("showMenu", "closeMenu");
+    }
+};

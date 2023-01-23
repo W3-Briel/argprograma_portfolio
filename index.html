@@ -18,31 +18,95 @@
 
   	<!--inicio navegacion-->
 	<nav id="navbar-example2" class="navbar bg-dark px-3 z-3 text-center text-light overflow-hidden">
-    <a class="navbar-brand fw-bold text-light col-12 col-sm-2 " href="#inicio">W3C-Brielito</a>
+    <img src="frond_end/img/argLogo.png" class="navbar-brand fw-bold text-light col-12 col-sm-1"></a>
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading1">Contacto</a>
+        <a class="nav-link" href="#sobreMi">Sobre Mi</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading2">Proyectos</a>
+        <a class="nav-link" href="#tecnologias">Tecnologias</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading3">Tecnologias</a>
+        <a class="nav-link" href="#proyectos">Proyectos</a>
       </li>
-      <li class="nav-item dropdown">
-        <a id="mostrar" class="nav-link dropdown-toggle" role="button" aria-expanded="false">Mas</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-circle"> Ingresar</i></a>
       </li>
     </ul>
-    <hr class="col-12 hr">
+
+    <hr class="col-12">
     </nav>
+    <!--FIN NAV-->
 
-    <ul id="drop" class="dropdown-menu bg-dark text-light">
-      <li><a class="dropdown-item" href="#scrollspyHeading4">Ingresar</a></li>
-      <li><a class="dropdown-item" href="#scrollspyHeading5">Registrar</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#scrollspyHeading6">Sobre Mi</a></li>
+    <!--NAV RESPONSIVE-->
+
+    <nav id="nav-r" class="container-fluid bg-dark text-light">
+      <div class="logo-r"><img src="frond_end/img/argLogoMini.png"></div>
+      <i id="menu-icon-responsive" class="col-1 i-menu fs-2 bi bi-list"></i>
+  </nav>
+
+  <div id="menu-responsive" class="closeMenu bg-dark text-light nav__responsive">
+    <i id="closeMenu-r" class="bi bi-x-lg close-menu"></i>
+    <ul>
+      <li class="nav-item-r">
+        <a class="nav-link-r" href="#sobreMi">Sobre Mi</a>
+      </li>
+      <li class="nav-item-r">
+        <a class="nav-link-r" href="#tecnologias">Tecnologias</a>
+      </li>
+      <li class="nav-item-r">
+        <a class="nav-link-r" href="#proyectos">Proyectos</a>
+      </li>
+      <li class="nav-item-r">
+        <a class="nav-link-r" href="#contacto">Contacto</a>
+      </li>
+
+      <hr id="hr-responsive">
+
+      <li class="nav-link-r">
+        <a class="nav-link-r" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-circle"> Ingresar</i></a>
+      </li>
     </ul>
+  </div>
 
+    <!--MODAL-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-4" id="exampleModalLabel">Ingresar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+    
+            <form>
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIN MODAL-->
+
+
+    <!--header-->
 
   <header class="text-center text-light hero overflow-hidden">
   <div id="inicio" class="container titulo__div">
@@ -51,14 +115,15 @@
   </div>
 
   <picture>
-    <source srcset="img/wavelg.svg" media="(min-width: 1500px)">
-    <img src="frond_end/img/wave.svg" unselectable class="wave object-fit-scale"> <!-- imagen principal -->
+    <source srcset="frond_end/img/wavelg.svg" media="(min-width: 1500px)">
+    <source srcset="frond_end/img/wave.svg" media="(min-width: 700px)">
+    <img src="frond_end/img/waveMini.svg" unselectable class="wave object-fit-scale">
   </picture>
 
   </header>
 
   <!--INICIO SOBREMI-->
-  <h2 id="scrollspyHeading6" class="text-light text-center fs-1 fw-semibold h2__margin__height">Sobre mí</h2>
+  <h2 id="sobreMi" class="text-light text-center fs-1 fw-semibold h2__margin__height">Sobre mí</h2>
   <section class="sobreMi container text-center">
     <img src="frond_end/img/mifoto.webp" class="rounded-circle mifoto">
     <p class="fs-6 text-light sobremi">Mi nombre es Angel Gabriel Saucedo, tengo 19 años y he estado dedicando mi tiempo al mundo de la programación durante dos años. <br>Además, tengo un año de estudio en la carrera técnica en e-commerce y actualmente estoy estudiando una Licenciatura en Gestión de Tecnologías de la Información. Con la ayuda de estudios autodirigidos y en línea a través de ArgentinaPrograma, he adquirido habilidades en desarrollo web full stack.<br><br> Mi portafolio digital demuestra mi experiencia en las tecnologías utilizadas en el desarrollo de sitios web y aplicaciones. Continuaré aprendiendo y mejorando mis habilidades, tanto a través de mis estudios actuales como en la práctica, para poder ofrecer soluciones de alta calidad a todos los clientes que trabajen conmigo.</p>
@@ -67,7 +132,7 @@
 
 
   <!--INICIO TECNOLOGIAS-->
-    <h2 id="scrollspyHeading3" class="text-light text-center fs-1 fw-semibold h2__margin__height">Tecnologias</h2>
+    <h2 id="tecnologias" class="text-light text-center fs-1 fw-semibold h2__margin__height">Tecnologias</h2>
   <div class="container-sm tecnologia__content">
     <div class="row gap-3 justify-content-center">
       <div class="tecnologias__font col-lg-5  bg-dark">
@@ -96,7 +161,7 @@
   <!--FIN TECNOLOGIAS-->
 
     <!--PROYECTOS-->
-    <h2 id="scrollspyHeading2" class="text-light text-center fs-1 fw-semibold h2__margin__height proyectos">Proyectos</h2>
+    <h2 id="proyectos" class="text-light text-center fs-1 fw-semibold h2__margin__height proyectos">Proyectos</h2>
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 container m-auto text-center">
     <div class="col">
       <div class="card">
@@ -138,18 +203,40 @@
   </div>
   <!--FINAL PROYECTOS-->
 
-	<footer class="container text-center">
-    <h3 id="scrollspyHeading1" class="fs-2 h2__margin__height text-bg-danger">
-      Contactar
-    </h3>
-    <div class="row">
-        <a class="fs-4 text-light h2__margin__height col-lg-6 contacto-item" href="https://wa.me/5491165452630?text=Me%20pongo%20en%20contacto%20contigo%20por%20mi%20inter%C3%A9s%20en%20tu%20portfolio%20web%2C%20me%20gustaria%20hablarte%20sobre%3A%20..." target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
-        <a href="https://github.com/W3-Briel" class="fs-4 text-light h2__margin__height col-lg-6 contacto-item" target="_blank"><i class="bi bi-github"></i> Github</a>
-        <a href="mailto:saucedog926@gmail.com" class="fs-4 text-light h2__margin__height col-lg-6 contacto-item"><i class="bi bi-envelope-at"></i> Correo</a>
-        <a href="https://www.linkedin.com/in/angel-gabriel-853975232/" target="_blank" class="fs-4 text-light h2__margin__height col-lg-6 contacto-item"><i class="bi bi-linkedin"></i> Linkedin</a>
-  </div>
+  <!--CONTACTOS-->
+    <section id="contacto" class="container mt-5 text-center">
+      <h3 class="text-bg-danger fs-4 text-light mx-5">CONTACTAR</h3>
+      <form class="row justify-content-center mt-2">
+        <label class="form-label col-sm-5" for="name">
+          <input name="name" type="text" class="form-control" required placeholder="nombre">
+        </label>
+        <label class="form-label col-sm-5" for="email">
+          <input name="email" type="email" class="form-control" required placeholder="email">
+        </label>
+        <br>
+        <label class="form-label col-sm-10" for="subject">
+          <input name="subject" type="text" class="form-control" required placeholder="asunto">
+        </label>
+        <br>
+        <label class="col-sm-10">
+          <input type="textarea" class="form-control textarea" required placeholder="cuentame sobre el trabajo...">
+        </label>
+          <br>
+        <input type="submit" class="btn btn-primary col-sm-5 col-5 mt-3" value="enviar">
+      </form>
+    </section>
+
+  <!--FINAL CONTACTO-->
+
+  <!--FOOTER-->
+  <footer class="text-center container-fluid bg-dark text-bg-light pt-4 mt-5">
+    <a class="text-light h2__margin__height contacto-item" href="https://wa.me/5491165452630?text=Me%20pongo%20en%20contacto%20contigo%20por%20mi%20inter%C3%A9s%20en%20tu%20portfolio%20web%2C%20me%20gustaria%20hablarte%20sobre%3A%20..." target="_blank"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://github.com/W3-Briel" class="text-light h2__margin__height contacto-item" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/angel-gabriel-853975232/" target="_blank" class="text-light h2__margin__height contacto-item"><i class="bi bi-linkedin"></i></a>
+
+    <p class="m-0 text-light">Angel Gabriel Saucedo</p>
   </footer>
-  <div class="text-center container-fluid bg-dark text-bg-light"><p class="m-0">Angel Gabriel Saucedo</p></div>
+  <!--FINAL FOOTER-->
 
   <script src="frond_end/index.js"></script>
 	<!--BOOTSTRAP js-->

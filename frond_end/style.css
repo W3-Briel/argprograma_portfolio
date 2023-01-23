@@ -2,16 +2,10 @@
     padding: 0 !important;
     font-family: Arial, Helvetica, sans-serif;
 }
-.hero {
-    background-attachment: fixed;
-    background-image: url(img/hero1.svg);
-    background-size: cover;
-    position: relative;
-    min-height: 90%;
-}
 #navbar-example2 {
     position: sticky;
     top: 0;
+
 }
 
 .nav-item:hover{
@@ -21,9 +15,100 @@
 .nav-item > a {
     color: #f2f2f2;
 }
-.dropdown-menu li > a:hover {
-    margin-left: 10px;
-    transition: all .3s;
+nav > hr {
+    margin: 0.3em;
+}
+/*nav responsive*/
+
+#nav-r {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+    display: none;
+}
+#nav-r .logo-r {
+    float: left;
+}
+#menu-icon-responsive {
+    float: right;
+}
+
+.close-menu {
+    color: red;
+    padding: 1em;
+    font-size: 1em;
+    float: right;
+}
+.close-menu:hover {
+    background: white;
+    border-radius: 20%;
+} 
+.nav__responsive {
+    min-height: 100vh;
+    min-width: 80vw;
+    opacity: .9;
+
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+}
+.closeMenu {
+    display: none;
+}
+.showMenu {
+    display: block;
+}
+#hr-responsive {
+    margin-top: 2em;
+    width: 200px;
+    display: inline-block;
+}
+.nav__responsive > ul {
+    list-style: none;
+    float: left;
+}
+.nav-item-r {
+    padding: 1em;
+    margin: 2px;
+    border-left: 1px solid #fff;
+}
+.nav-item-r a:hover {
+    font-size: 1.2em;
+    border-radius: 5%;
+    background-color: #0d6efd;
+}
+.nav-link-r {
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+}
+.i-menu {
+    padding-top: 0.5em;
+}
+
+@media only screen and (max-width: 699px){
+    #navbar-example2 {
+        display: none;
+    }
+    #nav-r {
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+    
+        display: block;
+    }
+}
+
+/*header*/
+
+.hero {
+    background-attachment: fixed;
+    background-image: url(img/hero1.svg);
+    background-size: cover;
+    position: relative;
+    min-height: 90%;
 }
 .titulo__div {
     padding-top: 30vh;
@@ -89,14 +174,21 @@
 .contacto-item:hover{
     color: #0d6efd !important;
 }
-#drop {
-    position: fixed;
-    right: 5px;
+
+.modal-backdrop {
+    z-index: 11 !important;
 }
-#drop a {
-    color: #5190ee;
-}
-#drop a:hover {
+
+form > * {
     color: #000;
-    font-weight: bold;
+}
+
+#exampleModalLabel {
+    color: #000;
+}
+
+/*form*/
+
+.textArea {
+    min-height: 5em;
 }
