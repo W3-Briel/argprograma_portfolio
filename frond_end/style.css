@@ -18,6 +18,22 @@
 nav > hr {
     margin: 0.3em;
 }
+.nav-ingresar {
+   /*  background-color: #656262; */
+    border-radius: 10px;
+    padding: 0.1em;
+
+    transition: all .3s;
+}
+.nav-ingresar:hover {
+    background: #fff;
+
+    opacity: 0.6;
+}
+.nav-ingresar > a:hover {
+    color: #000;
+    opacity: 0.9;
+}
 /*nav responsive*/
 
 #nav-r {
@@ -130,13 +146,23 @@ nav > hr {
     bottom: 0;
     left: 0;
 }
+
+/*card proyects*/
+.card {
+    -webkit-box-shadow: -2px -3px 16px 0px rgba(255,255,255,1);
+    -moz-box-shadow: -2px -3px 16px 0px rgba(255,255,255,1);
+    box-shadow: -2px -3px 16px 0px rgba(255,255,255,1);
+
+    background-color: #d4d4d4 !important;
+}
 .card img {
     display: inline-block;
     max-width: 100%;
-    height: 230px;
+    height: 12em;
     object-fit: cover;
     object-position: top left;
 }
+
 .tecnologia__content{
     margin-bottom: 10em;
 }
@@ -161,7 +187,7 @@ nav > hr {
     border: 2px solid #f2f2f2;
     box-shadow: 4px 9px 42px 5px rgba(141, 133, 133, 0.75);
 }
-
+/*proyectos*/
 .proyectos {
     font-family: 'Bakbak One', cursive;
     letter-spacing: 2px;
@@ -170,7 +196,32 @@ nav > hr {
     background-size: cover;
     background-attachment: fixed;
 }
+.content__links {
+    padding-bottom: 1em;
+}
+.proyects__links {
+    color: #fff;
+    background-color: rgba(46, 45, 45,0.8);
+    padding: 0.2em .3em;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
 
+    transition: all 0.3s;
+}
+.proyects__links-repo {
+    color: rgba(0, 0, 0,0.8);
+    background-color: #fff;
+    margin-top: .5em;
+}
+.proyects__links:hover {
+    padding: 0.3em;
+    font-weight: bolder;
+    color: #000;
+    background-color: rgba(46, 45, 45,0.4);
+}
+
+/*contacto*/
 .contacto-item:hover{
     color: #0d6efd !important;
 }
