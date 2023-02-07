@@ -20,19 +20,16 @@ nav > hr {
 }
 .nav-ingresar {
    /*  background-color: #656262; */
-    border-radius: 10px;
-    padding: 0.1em;
+    border-radius: 1em;
 
     transition: all .3s;
 }
 .nav-ingresar:hover {
     background: #fff;
-
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .nav-ingresar > a:hover {
     color: #000;
-    opacity: 0.9;
 }
 /*nav responsive*/
 
@@ -100,6 +97,14 @@ nav > hr {
     padding: 1em;
     text-decoration: none;
 }
+.nav-ingresar-r {
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-weight: bold;
+}
+.nav-ingresar-r:hover {
+    background: #000;
+}
 .i-menu {
     padding-top: 0.5em;
 }
@@ -145,6 +150,11 @@ nav > hr {
     position: absolute;
     bottom: 0;
     left: 0;
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 /*card proyects*/
@@ -163,23 +173,34 @@ nav > hr {
     object-position: top left;
 }
 
-.tecnologia__content{
+/* .tecnologia__content{
     margin-bottom: 10em;
+    width: 50%;
+} */
+/* .tecnologias__content-all {
+
 }
-.tecnologias__back, .tecnologias__font {
+.tecnologias__content {
+    width: 95%;
+} */
+.tecnologias__content > div {
+    margin: 1em 0;
+}
+.tecnologias__content-all {
     box-shadow: -12px 7px 16px 1px rgba(65, 62, 62, 0.75);
     min-height: 300px;
     border-radius: 5px;
     border-bottom: 2px solid #656262;
     border-top: 2px solid #656262;
 }
-.tecnologias__back:hover, .tecnologias__font:hover {
+.tecnologias__content-all:hover {
     opacity: 0.9;
     transition: all 1s;
 }
 .tecnologia {
     padding: 0.5em;
 }
+/*FINAL TECNOLOGIAS*/
 .sobremi, .mifoto {
     margin-bottom: 2em;
 }
